@@ -8,7 +8,7 @@ CORS(app)
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return jsonify({"status": "API online"}), 200
 
 @app.route('/api/conversas', methods=["GET"])
 def nome():
