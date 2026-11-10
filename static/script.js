@@ -22,7 +22,7 @@ async function postAPI(MID, ID, Remetente, Conteudo, Tipo, Status) {
         ],
     };
     const post = await fetch(
-        "https://chat-gvy6/api/conversas",
+        "https://Chat-gyv6.onrender.com/api/conversas",
         {
             method: "POST",
             headers: {
@@ -36,7 +36,7 @@ async function postAPI(MID, ID, Remetente, Conteudo, Tipo, Status) {
 }
 // Função para pegar mensagens da API
 async function getAPI() {
-    const resposta = await fetch("/api/conversas");
+    const resposta = await fetch("https://Chat-gyv6.onrender.com/api/conversas");
     const api = await resposta.json();
     
     // Ajustado para o formato do seu JSON (com conversas)
