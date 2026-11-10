@@ -22,7 +22,7 @@ async function postAPI(MID, ID, Remetente, Conteudo, Tipo, Status) {
         ],
     };
     const post = await fetch(
-        "/api/conversas",
+        "https://chat-gvy6/api/conversas",
         {
             method: "POST",
             headers: {
