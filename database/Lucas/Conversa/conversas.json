@@ -1,0 +1,17 @@
+{
+  "conversas": [
+    {
+      "id": "conversa_001",
+      "mensagens": [
+        {
+          "id": "msg_001",
+          "remetente": "usuario_001",
+          "conteudo": "Olá!",
+          "horario": "2026-11-09T14:30:00-03:00",
+          "tipo": "texto",
+          "status": "enviada"
+        }
+      ]
+    }
+  ]
+}

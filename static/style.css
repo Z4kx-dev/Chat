@@ -1,0 +1,217 @@
+
+.page {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    max-width: 1388px;
+    max-height: 647px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100vw;
+    max-height: 100vh;
+    background-color: black;
+    color: white;
+    margin: 0 auto;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+header {
+    max-width: 100vw;
+    max-height: 100vh;
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    padding: 35px;
+    box-shadow: 0 0 1px 0;
+    height: 30px;
+}
+
+button {
+    background-color: transparent;
+    color: #ffffffdc;
+    border-color: transparent;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.titulo {
+    position: absolute;
+    margin: 0 auto;
+    padding: 5px;
+    color: white;
+    top: 10px;
+}
+
+#entrar {
+    position: absolute;
+    top: 25px;
+    right: 150px;
+}
+
+#Cadastrar {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+}
+
+.cabecalho-conversas {
+    display: flex;
+    max-width: 230px;
+    width: 100%;
+    max-height: 647px;
+    height: 507px;
+    box-shadow: 1px 0 0 0 rgba(255, 255, 255, 1);
+}
+
+#titulo-conversas {
+    color: white;
+    display: flex;
+    margin: 0px 0px 0px 0px;
+    padding: 8px 35px 12px 30px;
+    height: 50px;
+    align-items: center;
+    box-shadow: 0 0 1px 0 rgba(255, 255, 255, 1);
+}
+
+#cabecalho-painel {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    position: absolute;
+    top: 70px;
+    left: 230px;
+    max-width: 1088px;
+    width: 100%;
+    height: 50px;
+    box-shadow: 0 0 1px 0 rgba(255, 255, 255, 1);
+}
+
+.nome {
+    margin: 0 auto;
+    padding: 0 0 0 0;
+    display: flex;
+    position: absolute;
+    top: 5px;
+    left: 65px;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+.ligar {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 100px;
+}
+
+.configurações-conversa {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    box-shadow: 0 0 0px 0 rgba(255, 255, 255, 1);
+}
+
+.background {
+    display: flex;
+    background-color: rgb(2, 2, 25);
+    position: absolute;
+    top: 121px;
+    left: 230px;
+    width: 1088px;
+    height: 525px;
+    box-shadow: 0 0px 4px 1px rgba(255, 255, 255)
+}
+
+.mensagem-usuario {
+    margin: 20px 20px 0 0;
+    width: auto;
+    height: auto;
+    padding: 7px;
+    align-self: flex-end;
+    color: white;
+    background-color: #27006c;
+    border-radius: 10px 10px 0 10px;
+
+}
+
+.mensagem-receive {
+    margin: 20px 0px 0 20px;
+    width: auto;
+    height: auto;
+    padding: 7px;
+    align-self: flex-start;
+    color: white;
+    background-color: #00596c;
+    border-radius: 10px 10px 10px 0;
+
+}
+
+.Enviar-Mensagem {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    position: absolute;
+    top: 389px;
+    width: 1088px;
+    height: 137px;
+    background: linear-gradient(to bottom, #020219 0%, #353535 100%);
+}
+
+.caixa-mensagem {
+    color: white;
+    margin: 0 auto;
+    padding: 15px 25px 80px 50px;
+    display: grid;
+    background: linear-gradient(to bottom, #300175 0%, #000000 100%);
+    width: 80%;
+    height: 20%;
+    border-radius: 50px;
+    place-self: center;
+    text-align: left;
+}
+
+.caixa-mensagem::placeholder {
+    color: white;
+}
+
+.envio {
+    color: black;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px 15px 20px 15px;
+    display: flex;
+    position: absolute;
+    right: 130px;
+    border-radius: 50px;
+    bottom: 35px
+}
+
+.mensagens {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.horarios-u {
+    display: grid;
+    justify-self: end;
+    font-size: 11px;
+    color: #aeaeae;
+}
+
+.horarios-r {
+    display: grid;
+    justify-self: end;
+    font-size: 11px;
+    color: #aeaeae;
+}
