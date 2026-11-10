@@ -10,6 +10,10 @@ CORS(app)
 def index():
     return jsonify({"status": "API online"}), 200
 
+@app.route('/health', methods=["GET"])
+def health():
+    return jsonify({"status": "ok"}), 200
+
 @app.route('/api/conversas', methods=["GET"])
 def nome():
     dados = {
