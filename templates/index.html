@@ -1,54 +1,199 @@
-<html class="page" lang="pt-BR"><head>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Chat</title>
-
-    <link rel="stylesheet" href="./static/style.css">
+    <meta name="theme-color" content="#101a1c">
+    <title>Korczak — Conecte-se</title>
+    <link rel="stylesheet" href="/static/style.css">
 </head>
-
 <body>
+    <main class="pagina">
 
-    <header class="cabecalho">
-        <h1 class="titulo">Korczak</h1>
+        <header class="cabecalho">
+            <a href="/" class="marca">
+                <div class="marca-icone">
+                    <span>K</span>
+                </div>
+                <span class="marca-nome">Korczak</span>
+            </a>
 
-        <button id="entrar">Entrar</button>
-        <button id="Cadastrar">Cadastrar</button>
-    </header>
-
-    <main id="chat">
-
-        <section id="conversas">
-            <div class="cabecalho-conversas">
-                <h1 id="titulo-conversas">Conversas</h1>
+            <div class="cabecalho-status">
+                <span class="status-indicador"></span>
+                Comunicação simples e privada
             </div>
-        </section>
+        </header>
 
-        <section class="painel">
+        <section class="conteudo">
 
-            <div id="cabecalho-painel">
-                <h1 class="nome">Lucas</h1>
-
-                <button class="ligar" type="button">Ligar</button>
-                <button class="configurações-conversa" type="button">Config.</button>
-            </div>
-
-            <div class="background">
-
-                <div class="mensagens"></div>
-
-                <div class="Enviar-Mensagem">
-                    <textarea class="caixa-mensagem" placeholder="Digite sua mensagem..."></textarea>
-                    <button type="submit" class="envio">&gt;</button>
+            <div class="apresentacao">
+                <div class="etiqueta">
+                    <span class="etiqueta-ponto"></span>
+                    SUA CONEXÃO COMEÇA AQUI
                 </div>
 
+                <h1>
+                    Conversas que<br>
+                    <span>aproximam.</span>
+                </h1>
+
+                <p class="descricao">
+                    Conecte-se com quem importa.
+                    Compartilhe ideias, converse e mantenha
+                    suas conexões sempre por perto.
+                </p>
+
+                <div class="previa-chat">
+                    <div class="previa-cabecalho">
+                        <div class="previa-avatar">K</div>
+
+                        <div class="previa-identidade">
+                            <strong>Korczak Chat</strong>
+                            <span>Conectando pessoas</span>
+                        </div>
+
+                        <span class="previa-online"></span>
+                    </div>
+
+                    <div class="previa-mensagens">
+                        <div class="mensagem mensagem-recebida">
+                            Olá! Que bom ter você por aqui.
+                            <span>22:15</span>
+                        </div>
+
+                        <div class="mensagem mensagem-enviada">
+                            Vamos conversar?
+                            <span>22:16</span>
+                        </div>
+
+                        <div class="mensagem mensagem-recebida">
+                            Sempre que quiser. :)
+                            <span>22:16</span>
+                        </div>
+                    </div>
+
+                    <div class="previa-rodape">
+                        <span>Digite sua mensagem...</span>
+                        <div class="previa-enviar">➤</div>
+                    </div>
+                </div>
             </div>
 
+            <div class="autenticacao">
+
+                <section class="cartao cartao-login">
+                    <div class="cartao-topo">
+                        <span class="cartao-etiqueta">BEM-VINDO DE VOLTA</span>
+                        <h2>Entrar</h2>
+                        <p>Acesse sua conta para continuar.</p>
+                    </div>
+
+                    <form class="formulario-login">
+                        <div class="campo">
+                            <label for="email-login">E-mail</label>
+                            <input
+                                type="email"
+                                id="email-login"
+                                name="email"
+                                placeholder="seu@email.com"
+                                autocomplete="email"
+                                required
+                            >
+                        </div>
+
+                        <div class="campo">
+                            <label for="senha-login">Senha</label>
+                            <input
+                                type="password"
+                                id="senha-login"
+                                name="senha"
+                                placeholder="Digite sua senha"
+                                autocomplete="current-password"
+                                required
+                            >
+                        </div>
+
+                        <button type="button" class="botao botao-principal">
+                            Entrar na conta
+                            <span>→</span>
+                        </button>
+                    </form>
+                </section>
+
+                <section class="cartao cartao-cadastro">
+                    <div class="cartao-topo">
+                        <span class="cartao-etiqueta">NOVO POR AQUI?</span>
+                        <h2>Criar conta</h2>
+                        <p>Comece a conversar em poucos passos.</p>
+                    </div>
+
+                    <form class="formulario-cadastro">
+                        <div class="campo">
+                            <label for="nome-cadastro">Nome de usuário</label>
+                            <input
+                                type="text"
+                                id="nome-cadastro"
+                                name="nome"
+                                placeholder="Como devemos chamar você?"
+                                autocomplete="username"
+                                required
+                            >
+                        </div>
+
+                        <div class="campo">
+                            <label for="email-cadastro">E-mail</label>
+                            <input
+                                type="email"
+                                id="email-cadastro"
+                                name="email"
+                                placeholder="seu@email.com"
+                                autocomplete="email"
+                                required
+                            >
+                        </div>
+
+                        <div class="campo">
+                            <label for="senha-cadastro">Senha</label>
+                            <input
+                                type="password"
+                                id="senha-cadastro"
+                                name="senha"
+                                placeholder="Crie uma senha"
+                                autocomplete="new-password"
+                                required
+                            >
+                        </div>
+
+                        <div class="campo">
+                            <label for="confirmar-senha">Confirmar senha</label>
+                            <input
+                                type="password"
+                                id="confirmar-senha"
+                                name="confirmar-senha"
+                                placeholder="Digite a senha novamente"
+                                autocomplete="new-password"
+                                required
+                            >
+                        </div>
+
+                        <button type="button" class="botao botao-secundario">
+                            Criar minha conta
+                            <span>→</span>
+                        </button>
+                    </form>
+                </section>
+
+            </div>
         </section>
+
+        <footer class="rodape">
+            <span>© 2026 Korczak</span>
+            <span>Feito para conectar pessoas.</span>
+        </footer>
 
     </main>
 
-    <script src="./static/script.js"></script>
-
-
-</body></html>
+    <script src="/static/script.js"></script>
+</body>
+</html>
